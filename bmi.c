@@ -10,7 +10,7 @@ int main(){
    printf("ingrese su altura en Centimetros:");
    scanf("%d",&altura);
 
-   imc = (float) (peso+altura)/2;
+   imc = (float) (peso+altura/100)/2;
 
    printf("su indice de masa corporal es: %3.2f\n",imc);
 
