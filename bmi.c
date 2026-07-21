@@ -10,7 +10,9 @@ int main(){
    printf("ingrese su altura en Centimetros:");
    scanf("%d",&altura);
 
-   imc = (float) (peso+altura/100)/2;
+   float altura_en_metros = (float) altura/100;
+
+   imc = peso / (altura_en_metros * altura_en_metros);
 
    printf("su indice de masa corporal es: %3.2f\n",imc);
    
@@ -21,7 +23,6 @@ int main(){
    printf("18.5 a 24.9\t|\tnormal\n");
    printf("25 a 29.9\t|\tsobrepeso\n");
    printf(">30        \t|\tobesidad\n");
-   return 0;
 
-	
+   return 0;
 }
