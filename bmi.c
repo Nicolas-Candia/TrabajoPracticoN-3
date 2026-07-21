@@ -4,11 +4,31 @@ int main(){
    int peso;
    int altura;
    float imc;
+   
+   do {
 
    printf("ingrese su peso en Kg:");
+
    scanf("%d",&peso);
+
+   if (peso <= 0){
+
+	   printf("el peso indicado es invalido, porfavor ingrese un numero correcto.\n");
+   }
+
+   } while (peso <= 0);
+   
+   do {
+
    printf("ingrese su altura en Centimetros:");
+
    scanf("%d",&altura);
+   
+   if (altura <= 0){
+	   printf("La altura ingresada es invalida, porfavor ingrese un numero valido\n");
+   }
+
+   } while (altura <= 0);
 
    float altura_en_metros = (float) altura/100;
 
